@@ -32,7 +32,7 @@ def delete_data(name):
 
 # Mengambil data
 data = fetch_data()
-
+st_autorefresh(interval=10 * 1000, key="data_refresh")
 # Konversi ke DataFrame
 if data:
     df = pd.DataFrame(data)
